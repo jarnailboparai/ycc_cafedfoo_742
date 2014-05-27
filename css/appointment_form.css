@@ -12,7 +12,8 @@
 	color:#424040;
 }
 .appointment_form .ui-input-text{
-		margin-bottom:16px;
+		/*margin-bottom:16px;*/
+		margin-bottom: 0.5em;
 }
 .manadatory_notification {
     color: #FFFFFF;
@@ -23,7 +24,7 @@
 .appointment_form textarea{
 	height:83px !important;
 }
-.appointment_form .ui-btn,.appointment_form .ui-btn:hover
+.appointment_form .ui-btn.ui-input-btn.ui-corner-all.ui-shadow,.appointment_form .ui-btn.ui-input-btn.ui-corner-all.ui-shadow:hover
 {
 	background:url(../images/appointment_btn_bg.png);
 	color:#fff;
@@ -31,7 +32,7 @@
 	border:none;
 	transition:all ease .3s;
 }
-.appointment_form .ui-btn:hover{
+.appointment_form .ui-btn.ui-input-btn.ui-corner-all.ui-shadow:hover{
 	background:#96220E url(../images/appointment_btn_bg.png);
 }
 ::-webkit-input-placeholder {
@@ -92,4 +93,54 @@
 }
 .squeeze_desc{
 	min-height:0px !important;
+}
+
+/* new time picker */
+.time_wrapper{
+	position:relative;
+}
+.timepickerlist-wrapper {
+left: 0px;
+display: none;
+position:absolute;
+top:36px;
+border-radius: 4px;
+}
+.timepickerlist-wrapper {
+overflow-y: auto;
+height: 110px;
+width: 100%;
+background: #fff;
+border: 1px solid #ddd;
+-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+outline: none;
+z-index: 10001;
+margin: 0;
+}
+.timepickerlist-wrapper ul{
+	margin:0px;
+	list-style:none;
+	padding:0px;
+	font-size:13px;
+}
+.timepickerlist-wrapper ul li{
+	padding:6px 8px;
+	cursor: pointer;
+	white-space: nowrap;
+	color: #000;
+	list-style: none;
+	margin: 0;
+}
+.timepickerlist-wrapper ul li:hover,.timepickerlist-wrapper ul li.selected_time{
+	background: #ececec !important;
+	color: #000 !important;
+}
+
+
+.time_format label{
+	float:left;
+	margin-right:10px;
+	color:#fff;
 }
