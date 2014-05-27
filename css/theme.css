@@ -62,7 +62,9 @@ body,body.ui-overlay-a{
 .refresh_link:hover,.refresh_link:active,.refresh_link:focus,.help_link:focus,.help_link:hover,.help_link:active{
 	box-shadow:none !important;
 }
-
+.help_link{
+	display:none !important;
+}
 
 /* custom setting of icons */
 .app_feature_list a img{
